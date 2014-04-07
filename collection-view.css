@@ -1,0 +1,29 @@
+h1 {
+  position: relative;
+  display: block;
+  padding: 20px;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+}
+
+.collection-view {
+  position: relative;
+}
+
+.collection-view .item {
+  position: absolute;
+}
+
+.collection-view .item .frame {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;	
+}
+
+.collection-view .item .frame img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%; 
+}

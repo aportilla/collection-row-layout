@@ -1,0 +1,27 @@
+<html>
+<head>
+  <title>Collection View</title>
+  <script type="text/javascript" src="lib/jquery-2.1.0.min.js"></script>
+  <script type="text/javascript" src="lib/underscore-min.js"></script>
+  <script type="text/javascript" src="mock-datasource.js"></script>
+  <script type="text/javascript" src="collection-view.js"></script>
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="collection-view.css">
+</head>
+<body>
+  <h1>Example Folder</h1>
+</body>
+<script type="text/javascript">
+
+  $(function(){
+    
+    $("body").append(COLLECTION_VIEW.$el);
+
+  	DATASOURCE
+  	.getMore(160)
+  	.then(COLLECTION_VIEW.addItems);
+
+  });
+
+</script>
+</html>
